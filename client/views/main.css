@@ -1,0 +1,16 @@
+body {
+  background-image: url('./background.jpg');
+  padding: 20% 35%; 
+}
+
+.player {
+  color: white;
+  font-family: arial;
+  font-style: italic;
+  border-width: 5px;
+  border-color: white;
+}
+
+.highlighted {
+  background-color: red;
+}
