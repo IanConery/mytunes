@@ -4,10 +4,10 @@ var SongQueueView = Backbone.View.extend({
   tagName: "table",
 
   initialize: function() {
-    var that = this;
-    setInterval(function(){
-      that.render();
-    },100);
+    this.render();
+    this.collection.bind("add", function() {
+      this.render();
+    }, this);
   },
 
   render: function(){

@@ -6,9 +6,11 @@ var SongQueue = Songs.extend({
   },
 
   addSong: function(model) {
+    this.add(model);
 
-    // debugger;
-    this.add(model.attributes);
+    if (this.models.length === 1) {
+      model.play();
+    }
   }
 
 });
