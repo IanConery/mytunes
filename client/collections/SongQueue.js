@@ -11,6 +11,11 @@ var SongQueue = Songs.extend({
     if (this.models.length === 1) {
       model.play();
     }
+  },
+
+  removeSong: function(song) {
+    // this.remove(song);
+    debugger;
   }
 
 });
