@@ -7,8 +7,8 @@ var SongQueue = Songs.extend({
 
   addSong: function(model) {
 
-    this.add(model.attributes);
     // debugger;
+    this.add(model.attributes);
   }
 
 });
