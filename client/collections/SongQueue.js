@@ -13,10 +13,10 @@ var SongQueue = Songs.extend({
     }
   },
 
-  removeSong: function(song) {
-    // this.remove(song);
-    debugger;
-  }
+  // removeSong: function(song) {
+  //   // this.remove(song);
+  //   debugger;
+  // }
 
 });
 

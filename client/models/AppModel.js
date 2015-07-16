@@ -21,11 +21,13 @@ var AppModel = Backbone.Model.extend({
     }, this);
 
     params.library.on('dequeue', function(song) {
+      // debugger;
       this.get('songQueue').remove(song);
+      this.set('currentSong', this.get('songQueue').first());
     }, this);
 
     params.library.on('ended', function(song) {
-      debugger;
+      // debugger;
       this.get('songQueue').removeSong(song);
     }, this);
 
